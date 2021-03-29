@@ -52,44 +52,44 @@ var updateClock = function()
 {
   var time = new Date().getHours();
   var messageText;
-  var image = "spavanac.jpg";
+  var image = "images/spavanac.jpg";
 
   var timeEventJS = document.getElementById("timeEvent");
   var lolcatImageJS = document.getElementById('lolcatImage');
   
   if (time == partytime)
   {
-    image = "partijanje.jpg";
+    image = "images/partijanje.jpg";
     messageText = "Party Time!";
   }
   else if (time == wakeuptime)
   {
-    image = "budise.jpg";
+    image = "images/budise.jpg";
     messageText = "Wakey wakey!";
   }
   else if (time == lunchtime)
   {
-    image = "jelo.jpg";
+    image = "images/jelo.jpg";
     messageText = "Come eat!";
   }
   else if (time == naptime)
   {
-    image = "slatki_snovi.jpg";
+    image = "images/slatki_snovi.jpg";
     messageText = "Sweet dreams!";
   }
   else if (time < noon)
   {
-    image = "jutro.jpg";
+    image = "images/jutro.jpg";
     messageText = "Morrrrniiing!";
   }
   else if (time >= evening)
   {
-    image = "spavanac.jpg";
+    image = "images/spavanac.jpg";
     messageText = "Rest!";
   }
   else
   {
-    image = "popodne.jpg";
+    image = "images/popodne.jpg";
     messageText = "Have a great day!";
   }
 
